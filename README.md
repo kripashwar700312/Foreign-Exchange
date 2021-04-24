@@ -30,37 +30,37 @@ One can send deal request through API provided following:
 
 #### Sample Request and Response:
 ##### 1. Request with all valid parameters and deal doesn't exists in system
-**Request**:<br />
-{
-    "dealId":"D1",
-    "fromCurrencyISOCode":"USD",
-    "toCurrencyISOCode":"NPR",
-    "orderDate":"2021-03-22 10:10:10",
-    "dealAmount":200.1
-}
-**Response**:
-{
-    "httpStatus": "CREATED",
-    "success": true,
-    "message": "Successfully accepted deal.",
-    "data": null
-}
+**Request**:\
+{\
+    "dealId":"D1",\
+    "fromCurrencyISOCode":"USD",\
+    "toCurrencyISOCode":"NPR",\
+    "orderDate":"2021-03-22 10:10:10",\
+    "dealAmount":200.1\
+}\
+**Response**:\
+{\
+    "httpStatus": "CREATED",\
+    "success": true,\
+    "message": "Successfully accepted deal.",\
+    "data": null\
+}\
 ##### 2. Request with all valid parameters and deal exists in system
-**Request**:
-{
-    "dealId":"D1",
-    "fromCurrencyISOCode":"USD",
-    "toCurrencyISOCode":"NPR",
-    "orderDate":"2021-03-22 10:10:10",
-    "dealAmount":200.1
-}
-**Response**:
-{
-    "httpStatus": "NOT_ACCEPTABLE",
-    "success": false,
-    "message": "Deal with id D2 already exists.",
-    "data": null
-}
+**Request**:\
+{\
+    "dealId":"D1",\
+    "fromCurrencyISOCode":"USD",\
+    "toCurrencyISOCode":"NPR",\
+    "orderDate":"2021-03-22 10:10:10",\
+    "dealAmount":200.1\
+}\
+**Response**:\
+{\
+    "httpStatus": "NOT_ACCEPTABLE",\
+    "success": false,\
+    "message": "Deal with id D2 already exists.",\
+    "data": null\
+}\
 ##### 3. Request with null and empty values in request parameters
 **Request**:\
 {\
@@ -69,39 +69,39 @@ One can send deal request through API provided following:
     "toCurrencyISOCode":"NPR",\
     "orderDate":"2021-03-22 10:10:10"\
 }\
-**Response**:
-{
-    "httpStatus": "BAD_REQUEST",
-    "success": false,
-    "message": "Validation error",
-    "timestamp": "24-04-2021 11:48:36",
-    "apiErrors": [
-        {
-            "field": "dealId",
-            "rejectedValue": "",
-            "message": "dealId cannot be empty"
-        },
-        {
-            "field": "dealAmount",
-            "rejectedValue": null,
-            "message": "dealAmount cannot be null"
-        }
-    ]
-}
+**Response**:\
+{\
+    "httpStatus": "BAD_REQUEST",\
+    "success": false,\
+    "message": "Validation error",\
+    "timestamp": "24-04-2021 11:48:36",\
+    "apiErrors": [\
+        {\
+            "field": "dealId",\
+            "rejectedValue": "",\
+            "message": "dealId cannot be empty"\
+        },\
+        {\
+            "field": "dealAmount",\
+            "rejectedValue": null,\
+            "message": "dealAmount cannot be null"\
+        }\
+    ]\
+}\
 ##### 4. Request with invalid request body
-**Request**:
-{
-    "dealId":"D1",
-    "fromCurrencyISOCode":"USD",
-    "toCurrencyISOCode":"NPR",
-    "orderDate":"2021-03-22 10:10:10",
-    "dealAmount":200.1,
-}
-**Response**:
-{
-    "httpStatus": "BAD_REQUEST",
-    "success": false,
-    "message": "Malformed JSON request",
-    "timestamp": "24-04-2021 11:50:14",
-    "apiErrors": []
-}
+**Request**:\
+{\
+    "dealId":"D1",\
+    "fromCurrencyISOCode":"USD",\
+    "toCurrencyISOCode":"NPR",\
+    "orderDate":"2021-03-22 10:10:10",\
+    "dealAmount":200.1,\
+}\
+**Response**:\
+{\
+    "httpStatus": "BAD_REQUEST",\
+    "success": false,\
+    "message": "Malformed JSON request",\
+    "timestamp": "24-04-2021 11:50:14",\
+    "apiErrors": []\
+}\
