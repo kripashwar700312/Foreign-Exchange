@@ -30,7 +30,7 @@ One can send deal request through API provided following:
 
 #### Sample Request and Response:
 ##### 1. Request with all valid parameters and deal doesn't exists in system
-**Request**:
+**Request**:<br />
 {
     "dealId":"D1",
     "fromCurrencyISOCode":"USD",
@@ -62,13 +62,13 @@ One can send deal request through API provided following:
     "data": null
 }
 ##### 3. Request with null and empty values in request parameters
-**Request**:
-{
-    "dealId":"",
-    "fromCurrencyISOCode":"USD",
-    "toCurrencyISOCode":"NPR",
-    "orderDate":"2021-03-22 10:10:10"
-}
+**Request**:\
+{\
+    "dealId":"",\
+    "fromCurrencyISOCode":"USD",\
+    "toCurrencyISOCode":"NPR",\
+    "orderDate":"2021-03-22 10:10:10"\
+}\
 **Response**:
 {
     "httpStatus": "BAD_REQUEST",
