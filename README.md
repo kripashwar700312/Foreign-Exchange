@@ -44,7 +44,7 @@ One can send deal request through API provided following:
     "success": true,\
     "message": "Successfully accepted deal.",\
     "data": null\
-}\
+}
 ##### 2. Request with all valid parameters and deal exists in system
 **Request**:\
 {\
@@ -60,7 +60,7 @@ One can send deal request through API provided following:
     "success": false,\
     "message": "Deal with id D2 already exists.",\
     "data": null\
-}\
+}
 ##### 3. Request with null and empty values in request parameters
 **Request**:\
 {\
@@ -87,7 +87,7 @@ One can send deal request through API provided following:
             "message": "dealAmount cannot be null"\
         }\
     ]\
-}\
+}
 ##### 4. Request with invalid request body
 **Request**:\
 {\
@@ -104,4 +104,4 @@ One can send deal request through API provided following:
     "message": "Malformed JSON request",\
     "timestamp": "24-04-2021 11:50:14",\
     "apiErrors": []\
-}\
+}
