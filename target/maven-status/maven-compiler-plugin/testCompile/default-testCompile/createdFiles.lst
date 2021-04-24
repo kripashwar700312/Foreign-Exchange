@@ -1,0 +1,5 @@
+com/bloomberg/fx/AbstractTest.class
+com/bloomberg/fx/mock/DealMock.class
+com/bloomberg/fx/service/DealsServiceTest.class
+com/bloomberg/fx/mock/DealRequestMock.class
+com/bloomberg/fx/controller/DealsControllerTest.class
